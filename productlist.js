@@ -1,4 +1,4 @@
-//const url = "http://abrittabroad.dk/wp21c/wp-json/wp/v2/album";
+//NO NEED TO USE THIS LINK ANYMORE ------->//const url = "http://abrittabroad.dk/wp21c/wp-json/wp/v2/album";
 const url = "http://abrittabroad.dk/wp21c/wp-json/wp/v2/album/?per_page=15";
 
 //fetch the data
@@ -74,7 +74,7 @@ function showProducts(products) {
 
 </article>*/
 
-//THIS SECTION IS FOR THE SLIDESHOW//////
+//THIS SECTION IS FOR THE SLIDESHOW THAT DOESN'T CURRENTLY WORK//////
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -89,7 +89,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("slideshow");
+  let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;

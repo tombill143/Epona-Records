@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+</head>
+    
+<body style="font-family:Verdana;color:#aaaaaa;">
+    <div class="bordernav">
+    <div class=intro style="background-color:#8BD8A0;padding:1px;text-align:center;">
+        <h1>ALBUMS</h1>
+        <img src="./images/logo.png" alt="">
+      </div>
+    </div>
+
+<div style="background-color:15px;text-align:center;">
+    <img src="./images/albumpic.JPG" alt="" width="100%">
+    </div>
+
+
+<div class="bordernav">
+<div class="topnav" id="myTopnav">
+    <a href="./index.html" class="active">HOME</a>
+    <a href="#news">ABOUT US</a>
+    <a href="#contact">REVIEWS</a>
+    <a href="./albums.html">ALBUMS</a>
+    <a href="#about">MERCH</a>
+    <div class="searchnav">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder=" Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+<div style="overflow:auto"></div>
+<main>
+
+<div class="slideshow">
+  <p>the slideshow will go here</p>
+</div>
+<template id="albumProductTemplate">
+  <article class="row">
+    <div class="column" style="background-color:#527B63;">
+      <img class="albumimage" src="" alt="">
+      <h2 class="albumheading"></h2>
+      <p class="album"></p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+    
+
+  </article>
+</template>
+
+  <!--------<article class="row">
+    <div class="column" style="background-color:#527B63;">
+      <img class="albumimage"src="./images/Just Singin Cover.bmp.jpg" alt="">
+      <h2>Victoria B. Berringer</h2>
+      <p>Just Singin'</p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+    <div class="column" style="background-color:#527B63;">
+      <img class="albumimage"src="./images/KHB packshot.jpg" alt="">
+      <h2>KHB</h2>
+      <p>Live</p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+    <div class="column" style="background-color:#527B63">
+      <img class="albumimage"src="./images/Legends blue cover.jpg" alt="">
+      <h2>Kings Ramsom</h2>
+      <p>Legends of the Edge.</p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+    <div class="column" style="background-color:#527B63;">
+      <img class="albumimage"src="./images/Shoes of the skin of a bird packshot 4732x4749.jpg" alt="">
+      <h2>Corvus</h2>
+      <p>shoes from the skin of a bird</p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+
+  </article>
+
+  <article class="row">
+    <div class="column" style="background-color:#527B63;">
+      <img class="albumimage"src="./images/Slowly to the moon packshot 768x768.jpeg" alt="">
+      <h2>Tony Nyland</h2>
+      <p>Slowly To The Moon</p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+    <div class="column" style="background-color:#527B63;">
+      <img class="albumimage"src="./images/Sol Invictus CD for flyer.bmp.jpg" alt="">
+      <h2>Mike Billington</h2>
+      <p>Sol Invictus.</p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+    <div class="column" style="background-color:#527B63">
+      <img class="albumimage" src="./images/SOTSW for flyer.JPG" alt="">
+      <h2>Tom Yates</h2>
+      <p>Song of the Shimmering Way</p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+    <div class="column" style="background-color:#527B63;">
+      <img class="albumimage" src="./images/TSB cover in colour.jpg" alt="">
+      <h2>Tom Shepley's Band</h2>
+      <p>How do you do</p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+
+  </article>
+
+  
+  <article class="lastrow">
+    <div class="column" style="background-color:#527B63;">
+      <img class="albumimage" src="./images/LCWA for flyer.bmp.jpg" alt="">
+      <h2>Tom Yates</h2>
+      <p>Love comes well armed.</p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+    <div class="column" style="background-color:#527B63;">
+      <img class="albumimage" src="./images/SCS for flyer.bmp.jpg" alt="">
+      <h2>Tom Yates</h2>
+      <p>Second City Spiritual.</p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+    <div class="column" style="background-color:#527B63">
+      <img class="albumimage" src="./images/TWWLI for flyer.bmp.jpg" alt="">
+      <h2>Keith Hancock</h2>
+      <p>This World We Live In.</p>
+      <button class="addtocheckout">Add To Checkout</button>
+    </div>
+
+
+  </article>-->
+</main>
+
+
+
+</body>
+<footer><div class=footer style="background-color:#3B4A3F;text-align:center;padding:10px;margin-top:7px;">© All Rights Reserved</div></footer>
+<script src="productlist.js"></script>
+</html>
+

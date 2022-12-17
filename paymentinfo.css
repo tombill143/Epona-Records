@@ -1,0 +1,797 @@
+/*---------------------------------------------EVERYTHING WILL HAVE A BORDER BOX---------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/*---------------------------------------------BORDER BOX SECTION END-----------------------------------------------------------*/
+
+/*---------------------------------------------FONTS------------------------------------------------------------------------------------*/
+
+/**
+     * @license
+     *
+     * Font Family: Clash Grotesk
+     * Designed by: Indian Type Foundry
+     * URL: https://www.fontshare.com/fonts/clash-grotesk
+     * © 2022 Indian Type Foundry
+     *
+     * Font Styles:
+     * Clash Grotesk Variable(Variable font)
+     * Clash Grotesk Extralight
+     * Clash Grotesk Light
+     * Clash Grotesk Regular
+     * Clash Grotesk Medium
+     * Clash Grotesk Semibold
+     * Clash Grotesk Bold
+     *
+    */
+
+/**
+    * This is a variable font
+    * You can controll variable axes as shown below:
+    * font-variation-settings: 'wght' 700.0;
+    *
+    * available axes:
+    
+    * 'wght' (range from 200.0 to 700.0)
+    
+    */
+
+@font-face {
+  font-family: myFont;
+  src: url(./fonts/ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Medium.ttf);
+}
+
+@font-face {
+  font-family: myFont2;
+  src: url(./fonts/ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Bold.ttf);
+}
+
+@font-face {
+  font-family: "ClashGrotesk";
+  src: url("../fonts/ClashGrotesk-Variable.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Variable.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Extralight";
+  src: url("../fonts/ClashGrotesk-Extralight.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Extralight.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Light";
+  src: url("../fonts/ClashGrotesk-Light.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Light.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Regular";
+  src: url("../fonts/ClashGrotesk-Regular.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Regular.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Medium";
+  src: url("../fonts/ClashGrotesk-Medium.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Medium.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Semibold";
+  src: url("../fonts/ClashGrotesk-Semibold.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Semibold.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Bold";
+  src: url("../fonts/ClashGrotesk-Bold.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Bold.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #dcf4e1;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+
+  margin: 5px 20px 15px 20px;
+}
+
+.total {
+  color: black;
+  font-family: myFont2;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: myFont;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #0d3a16;
+  text-decoration: none;
+  justify-content: space-evenly;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 1000px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.intro {
+  filter: drop-shadow(1px 10px 12px #18241c);
+  padding: none;
+}
+
+h3 {
+  color: black;
+}
+
+.intro h1 {
+  display: inline;
+  font-size: 6rem;
+}
+
+.intro img {
+  float: right;
+  width: 150px;
+  padding-right: 2em;
+  filter: drop-shadow(1px 10px 12px #18241c);
+}
+
+.topnav > a {
+  filter: drop-shadow(1px 10px 12px #18241c);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #8fce9e;
+  filter: drop-shadow(30px 10px 4px #18241c);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.bordernav {
+  box-sizing: border-box;
+  padding: 1%;
+  background-color: #425f4c;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  margin-left: 4rem;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+  text-align: center;
+}
+
+.topnav .search-container {
+  float: right;
+  padding-right: 11px;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.topnav .search-container button {
+  display: flex;
+
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.paymentform {
+  display: flex;
+}
+
+section#album_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2em;
+  padding: 6rem;
+}
+
+.menu {
+  float: left;
+  margin: 0 auto;
+  padding: 30px 20px;
+  width: 20%;
+  text-align: center;
+  min-height: calc(100vh - 275px - 60px);
+}
+
+.menu a {
+  background-color: #8fce9e;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  width: 900vw;
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  color: white;
+  filter: drop-shadow(1px 10px 12px #18241c);
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+  filter: drop-shadow(1px 10px 12px #18241c);
+}
+
+html,
+body {
+  background-color: #8fce9e;
+}
+
+p {
+  color: white;
+  font-family: myFont;
+}
+
+h2 {
+  color: white;
+  font-family: myFont2;
+}
+
+h3 {
+  font-family: myFont2;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  filter: drop-shadow(10px 10px 12px #18241c);
+  text-align: center;
+  font-family: myFont2;
+}
+
+a {
+  filter: drop-shadow(1px 10px 12px #18241c);
+  font-family: myFont2;
+  font-size: 1.5rem;
+}
+
+footer {
+  filter: drop-shadow(1px 10px 12px #18241c);
+}
+
+.menu {
+  float: left;
+  margin: 0 auto;
+  padding: 30px 20px;
+  width: 20%;
+  text-align: center;
+  min-height: calc(100vh - 275px - 60px);
+}
+
+.menu a {
+  background-color: #8fce9e;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  width: 900vw;
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  color: white;
+  filter: drop-shadow(1px 10px 12px #18241c);
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+  filter: drop-shadow(1px 10px 12px #18241c);
+}
+
+.intro {
+  filter: drop-shadow(1px 10px 12px #18241c);
+  padding: none;
+}
+
+.intro h1 {
+  display: inline;
+  font-size: 6rem;
+}
+
+.intro img {
+  float: right;
+  width: 150px;
+  padding-right: 2em;
+  filter: drop-shadow(1px 10px 12px #18241c);
+}
+
+/*------------------------------------------------------FOOTER-------------------------------------------*/
+
+@font-face {
+  font-family: myFont;
+  src: url(./fonts/ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Medium.ttf);
+}
+
+@font-face {
+  font-family: myFont2;
+  src: url(./fonts/ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Bold.ttf);
+}
+
+@font-face {
+  font-family: "ClashGrotesk";
+  src: url("../fonts/ClashGrotesk-Variable.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Variable.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Extralight";
+  src: url("../fonts/ClashGrotesk-Extralight.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Extralight.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Light";
+  src: url("../fonts/ClashGrotesk-Light.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Light.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Regular";
+  src: url("../fonts/ClashGrotesk-Regular.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Regular.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Medium";
+  src: url("../fonts/ClashGrotesk-Medium.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Medium.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Semibold";
+  src: url("../fonts/ClashGrotesk-Semibold.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Semibold.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashGrotesk-Bold";
+  src: url("../fonts/ClashGrotesk-Bold.woff2") format("woff2"),
+    url("../fonts/ClashGrotesk-Bold.woff") format("woff"),
+    url("../fonts/ClashGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/*---------------------------------------------FONTS END---------------------------------------------*/
+
+/*---------------------------------------------RULES FOR ALL PARAGRAPHS AND HEADINGS---------------------------------------------*/
+
+html,
+body {
+  background-color: #8fce9e;
+}
+
+p {
+  color: white;
+  font-family: myFont;
+}
+
+h2 {
+  color: white;
+  font-family: myFont2;
+}
+
+h3 {
+  font-family: myFont2;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  filter: drop-shadow(10px 10px 12px #18241c);
+  text-align: center;
+  font-family: myFont2;
+}
+
+a {
+  filter: drop-shadow(1px 10px 12px #18241c);
+  font-family: myFont2;
+  font-size: 1.5rem;
+}
+
+/*---------------------------------------------RULES FOR ALL PARAGRAPHS AND HEADINGS END---------------------------------------------*/
+
+/*---------------------------------------------NAVIGATION----------------------------------------------------------------------------------------*/
+
+.topnav > a {
+  filter: drop-shadow(1px 10px 12px #18241c);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #8fce9e;
+  filter: drop-shadow(30px 10px 4px #18241c);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.bordernav {
+  box-sizing: border-box;
+  padding: 1%;
+  background-color: #425f4c;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  margin-left: 4rem;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+  text-align: center;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+section#album_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2em;
+  padding: 6rem;
+}
+
+/*---------------------------------------------NAVIGATION END-----------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------FOOTER-------------------------------------------*/
+
+.footer {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  padding-bottom: 10px;
+  justify-content: right;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  filter: drop-shadow(1px 10px 12px #18241c);
+  justify-content: center;
+  margin-top: 4em;
+  margin-bottom: 8em;
+}
+
+.footerimg {
+  padding: 2em;
+  filter: drop-shadow(1px 10px 12px #18241c);
+  border-radius: 25%;
+  transform: rotate(-10deg);
+}
+
+.footer-a {
+  color: white;
+
+  font-family: myFont;
+  font-size: 0-5em;
+  font-size: 18px;
+}
+
+.column1 {
+  line-height: 2.2;
+}
+
+.column2 {
+  line-height: 2.2;
+}
+
+.column3 {
+  line-height: 2.2;
+}
+
+li {
+  list-style-type: none;
+}
+
+.imagebox {
+  padding-top: 4em;
+  background-color: #3b4a3f;
+  filter: drop-shadow(1px 10px 12px #18241c);
+}
+
+.footeremail {
+  position: relative;
+  padding: 2px;
+  margin-top: 0px;
+  margin-right: 16px;
+
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  left: 10px;
+}
+
+.emailabel {
+  background-color: #18241c;
+  color: white;
+  padding: 4px 8px;
+  padding-top: 4px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  width: 80%;
+}
+
+.footerbutton {
+  position: absolute;
+  background-color: white;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  right: 0%;
+  width: 55%;
+  height: 65%;
+  top: 3%;
+}
+
+.footer-search-container {
+  width: 50%;
+  padding: 0.5px;
+  padding-bottom: none;
+  margin-left: 30%;
+}
+
+.footersearchlink {
+  display: inline;
+  font-family: myFont;
+  color: #18241c;
+
+  font-weight: bolder;
+}
+
+.copyrightstuff {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.copyright {
+  padding-top: 20px;
+  text-align: center;
+}

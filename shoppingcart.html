@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SHOPPING CART</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+    </head>
+    <body>
+        <body style="font-family:Verdana;color:#aaaaaa;">
+            <div class="bordernav">
+            <div class=intro style="background-color:#8BD8A0;padding:1px;text-align:center;">
+                <h1>SHOPPING CART </h1>
+                <img src="./images/logo.png" alt="">
+              </div>
+            </div>
+        
+        <div style="background-color:15px;text-align:center;">
+            <img class="shopping-cart"src="./images/shoppingcart.png" alt="" width="100%">
+            </div>
+        
+        
+        <div class="bordernav">
+        <div class="topnav" id="myTopnav">
+           <a href="./index.html">HOME</a>
+            <a href="#news">ABOUT US</a>
+            <a href="#contact">REVIEWS</a>
+            <a href="./albums.html">ALBUMS</a>
+            <a href="#about">MERCH</a>
+            <div class="searchnav">
+          <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder=" Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+        <div style="overflow:auto"></div>
+        
+
+
+        
+
+        <section class="container content-section">
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Tom Yates</h1></span>
+                    <span class="shop-item-title">Love Is Losing Ground</span>
+                    <img class="shop-item-image" src="./images/LILG cover for flyer.bmp.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Victoria B. Beringer</h1></span>
+                    <span class="shop-item-title">Love Is Singin'</span>
+                    <img class="shop-item-image" src="./images/Just Singin Cover.bmp.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Mike Billington</h1></span>
+                    <span class="shop-item-title">IMBOLC</span>
+                    <img class="shop-item-image" src="./images/IMBOLC packshot.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Tom Yates</h1></span>
+                    <span class="shop-item-title">Love Comes Well Armed</span>
+                    <img class="shop-item-image" src="./images/LCWA for flyer.bmp.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Harry Boardman</h1></span>
+                    <span class="shop-item-title">Golden Stream</span>
+                    <img class="shop-item-image" src="./images/Golden Stream packshot.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Corvus</h1></span>
+                    <span class="shop-item-title">gloves from a skin of a fish</span>
+                    <img class="shop-item-image" src="./images/GOTSOAF for flyer.bmp.jpg"">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>KHB</h1></span>
+                    <span class="shop-item-title">Live</span>
+                    <img class="shop-item-image" src="./images/KHB packshot.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Kings Ransom</h1></span>
+                    <span class="shop-item-title">Legends of the Edge</span>
+                    <img class="shop-item-image" src="./images/Legends blue cover.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Corvus</h1></span>
+                    <span class="shop-item-title">shoes from the skin of a board</span>
+                    <img class="shop-item-image" src="./images/Shoes of the skin of a bird packshot 4732x4749.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Tony Nyland</h1></span>
+                    <span class="shop-item-title">Slowly To The Moon</span>
+                    <img class="shop-item-image" src="./images/Slowly to the moon packshot 768x768.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Mike Billington</h1></span>
+                    <span class="shop-item-title">Sol Invictus</span>
+                    <img class="shop-item-image" src="./images/Sol Invictus CD for flyer.bmp.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Tom Yates</h1></span>
+                    <span class="shop-item-title">Song of the Shimmering Way</span>
+                    <img class="shop-item-image" src="./images/SOTSW for flyer.JPG">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Tom Yates</h1></span>
+                    <span class="shop-item-title">Second City Spiritual</span>
+                    <img class="shop-item-image" src="./images/SCS for flyer.bmp.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Keith Hancock</h1></span>
+                    <span class="shop-item-title">This World We Live In</span>
+                    <img class="shop-item-image" src="./images/TWWLI for flyer.bmp.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"><h2>Tom Shepleys Band</h1></span>
+                    <span class="shop-item-title">How do you do?</span>
+                    <img class="shop-item-image" src="./images/TSB cover in colour.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                    
+
+            
+        </section>
+        
+        <template id="albumProductTemplate">
+            <article>
+              <div class="column" style="background-color:#527B63;">
+                <img class="albumimage" src="" alt="">
+                <h2 class="albumheading"></h2>
+                <p class="album"></p>
+                <button class="addtocheckout">Add To Checkout</button>
+              </div>
+            </article>
+          </template>
+          
+        
+          
+<div class="shoppingcartdesign">
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">£0</span>
+            </div>
+           <a href="./paymentinfo.html"><button class="btn btn-primary btn-purchase" type="button">PURCHASE</button></a>
+        </section>
+    </div>
+        <footer class="main-footer">
+           
+        </footer>
+    </body>
+    <script src="script.js"></script>
+</html>

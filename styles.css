@@ -437,13 +437,13 @@ footer {
 /* ------------------------ PAYBOX-----------------------------------------------------------------*/
 
 .box {
-  display: flex;
+  
   justify-content: center;
 }
 
 .paybox {
-  display: grid;
-  grid-template-columns: 3fr 3fr;
+  
+  
   background-color: #eae5e5;
   padding: 3rem;
   margin-top: 5em;
@@ -486,10 +486,10 @@ footer {
   height: 60%;
 }
 
-.payalbumimage {
-  width: 100%;
-  filter: drop-shadow(1px 8px 4px #18241c);
-  border-radius: 50px 0px 0px 0px;
+
+
+.greenimage{
+  text-align: center;
 }
 
 .paycolumn {
@@ -1202,8 +1202,7 @@ section#album_container {
 }
 
 .paybox {
-  display: grid;
-  grid-template-columns: 3fr 3fr;
+
   background-color: #eae5e5;
   padding: 3rem;
   margin-top: 5em;
@@ -1850,3 +1849,13 @@ li{
 }
 
   /*------------------------------------------------------FOOTER-------------------------------------------*/
+
+  .recieved{
+    color: black;
+    text-align: center;
+    
+  }
+
+  .ID{
+    text-align: center;
+  }

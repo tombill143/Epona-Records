@@ -1493,9 +1493,9 @@ body {
 }
 
 .container-content-section {
-  display: grid;
+  display: flex;
   padding: 2em;
-
+  grid-gap: 0.05em;
   background-color: #c7e6d1;
   border-radius: 15px;
 }
@@ -1627,10 +1627,12 @@ body {
 }
 
 .shop-item {
+  display: block;
   margin: 30px;
   background-color: #273f2f;
   border-radius: 50px 0px 50px 0px;
   filter: drop-shadow(1px 10px 12px #18241c);
+  overflow: auto;
 }
 
 .shop-item-title {
@@ -1663,6 +1665,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 0.5em;
+  overflow: auto;
 }
 
 .cart-header {

@@ -639,7 +639,7 @@ margin-bottom: 8em;
 
 .footer-a{
   color: white;
- 
+ text-decoration: none;
   font-family: myFont;
   font-size: 0-5em;
   font-size: 18px;
@@ -662,6 +662,7 @@ margin-bottom: 8em;
 
 li{
   list-style-type: none;
+  
 }
 
 .imagebox{
@@ -758,4 +759,20 @@ li{
 
   /*-----------------------------MERCH PAGE--------------------------------*/
 
-  
+.merch {
+  position: relative;
+  border: none;
+  justify-content: center;
+}
+.tshirt {
+  position: relative;
+  border: none;
+  padding-left: 10%;
+  height: 83%;
+  width: 48%;
+}
+
+.books {
+  position: relative;
+  padding-bottom: 1rem;
+}

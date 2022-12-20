@@ -591,14 +591,25 @@ input{
 /*------------------------- FOR REVIEWS PAGE ------------------------------------*/
 
 .reviews{
-  position: absolute;
-  text-align: center;
+  position: relative;
+
   border: none;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  justify-content: center;
 }
+
+.review1{
+  text-align: center;
+}
+
+.review2{
+  text-align: center;
+  
+}
+
 .footer {
   display: grid;
   grid-template-columns: 200px 1fr 200px;

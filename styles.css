@@ -1213,6 +1213,12 @@ section#album_container {
 }
 /*------------------------------------------------SLIDES END-------------------------------------------------------------------------*/
 
+.confirmbox {
+  background-color: #c7e6d1;
+  border-radius: 15px;
+  padding: 4em;
+}
+
 .albumimage {
   width: 100%;
   filter: drop-shadow(1px 8px 4px #18241c);
@@ -1258,7 +1264,6 @@ section#album_container {
   padding: 4rem;
   text-align: center;
 }
-/* ------------------------ EXPERIMENTAL END-----------------------------------------------------------------*/
 
 /* ------------------------ PAYBOX-----------------------------------------------------------------*/
 
@@ -1487,9 +1492,10 @@ body {
   font-size: 8em;
 }
 
-.content-section {
+.container-content-section {
   display: grid;
-  margin: 6rem;
+  padding: 2em;
+
   background-color: #c7e6d1;
   border-radius: 15px;
 }
@@ -1498,7 +1504,7 @@ body {
   padding: 0 1.5em;
 }
 .section-header {
-  font-family: "Metal Mania";
+  font-family: "myFont";
   font-weight: normal;
   color: #333;
   text-align: center;
@@ -1625,7 +1631,6 @@ body {
   background-color: #273f2f;
   border-radius: 50px 0px 50px 0px;
   filter: drop-shadow(1px 10px 12px #18241c);
-  padding: 1em;
 }
 
 .shop-item-title {
@@ -1657,7 +1662,7 @@ body {
 .shop-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 2em;
+  padding: 0.5em;
 }
 
 .cart-header {
@@ -1758,6 +1763,13 @@ body {
   display: block;
   margin: 40px auto 80px;
   font-size: 1.75em;
+}
+
+.shoppingcartdesign {
+  padding: 2em;
+  margin: 1em;
+  background-color: #c7e6d1;
+  border-radius: 15px;
 }
 
 /*--------------------------------------------------SHOPPING CART END-------------------------------------------*/
